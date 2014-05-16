@@ -1,7 +1,7 @@
 {
   "name": "generate-object-property",
   "version": "1.0.0",
-  "description": "generate a valid object property",
+  "description": "Generate safe JS code that can used to reference a object property",
   "repository": "mafintosh/generate-object-property",
   "devDependencies": {
     "tape": "^2.13.0"
