@@ -1,0 +1,12 @@
+{
+  "name": "generate-object-property",
+  "version": "0.0.0",
+  "description": "generate a valid object property",
+  "repository": "mafintosh/generate-object-property",
+  "devDependencies": {
+    "tape": "^2.13.0"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  }
+}
