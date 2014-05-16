@@ -1,6 +1,6 @@
 {
   "name": "generate-object-property",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "generate a valid object property",
   "repository": "mafintosh/generate-object-property",
   "devDependencies": {
