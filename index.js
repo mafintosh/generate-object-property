@@ -1,9 +1,8 @@
-var valid = /^[a-zA-Z_][a-zA-Z_0-9]*$/
+var isProperty = require('is-property')
 
 var gen = function(obj, prop) {
-  if (valid.test(prop)) return obj+'.'+prop
-  return obj+'['+JSON.stringify(prop)+']'
+  return isProperty(prop) ? obj+'.'+prop : obj+'['+JSON.stringify(prop)+']'
 }
 
-gen.valid = valid
+gen.valid = isProperty
 module.exports = gen

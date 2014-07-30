@@ -8,5 +8,8 @@
   },
   "scripts": {
     "test": "tape test.js"
+  },
+  "dependencies": {
+    "is-property": "^1.0.0"
   }
 }
