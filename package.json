@@ -2,7 +2,10 @@
   "name": "generate-object-property",
   "version": "1.1.0",
   "description": "Generate safe JS code that can used to reference a object property",
-  "repository": "mafintosh/generate-object-property",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/generate-object-property"
+  },
   "devDependencies": {
     "tape": "^2.13.0"
   },
@@ -11,5 +14,12 @@
   },
   "dependencies": {
     "is-property": "^1.0.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/mafintosh/generate-object-property/issues"
+  },
+  "homepage": "https://github.com/mafintosh/generate-object-property",
+  "main": "index.js",
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT"
 }
