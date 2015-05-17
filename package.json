@@ -1,6 +1,6 @@
 {
   "name": "generate-object-property",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Generate safe JS code that can used to reference a object property",
   "repository": {
     "type": "git",
