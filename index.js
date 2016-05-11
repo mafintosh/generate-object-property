@@ -6,7 +6,7 @@ var gen = function(obj, prop) {
 
 gen.valid = isProperty
 gen.property = function (prop) {
- return isProperty(prop) ? prop : JSON.stringify(prop)
+  return isProperty(prop) ? prop : JSON.stringify(prop)
 }
 
 module.exports = gen
