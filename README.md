@@ -4,8 +4,6 @@ Generate safe JS code that can used to reference a object property
 
 	npm install generate-object-property
 
-[![build status](http://img.shields.io/travis/mafintosh/generate-object-property.svg?style=flat)](http://travis-ci.org/mafintosh/generate-object-property)
-
 ## Usage
 
 ``` js
