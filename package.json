@@ -7,10 +7,10 @@
     "url": "https://github.com/mafintosh/generate-object-property"
   },
   "devDependencies": {
-    "tape": "^2.13.0"
+    "brittle": "^3.7.0"
   },
   "scripts": {
-    "test": "tape test.js"
+    "test": "brittle test.js"
   },
   "dependencies": {
     "is-property": "^1.0.0"
