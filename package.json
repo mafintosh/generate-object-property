@@ -7,10 +7,17 @@
     "url": "https://github.com/mafintosh/generate-object-property"
   },
   "devDependencies": {
-    "brittle": "^3.7.0"
+    "brittle": "^3.7.0",
+    "lunte": "^1.0.2",
+    "prettier": "^3.6.2",
+    "prettier-config-holepunch": "^2.0.0"
   },
   "scripts": {
-    "test": "brittle test.js"
+    "format": "prettier --write .",
+    "lint": "prettier --check . && lunte",
+    "test": "npm run test:node && npm run test:bare",
+    "test:node": "brittle-node test.js",
+    "test:bare": "brittle-bare test.js"
   },
   "dependencies": {
     "is-property": "^1.0.0"

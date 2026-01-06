@@ -12,6 +12,6 @@ gen.optional = function (obj, prop) {
 
 module.exports = gen
 
-function gen (obj, prop) {
+function gen(obj, prop) {
   return isProperty(prop) ? obj + '.' + prop : obj + '[' + JSON.stringify(prop) + ']'
 }
