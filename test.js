@@ -16,3 +16,10 @@ test('valid (optional)', function (t) {
 test('invalid (optional)', function (t) {
   t.is(gen.optional('a', '-b'), 'a?.["-b"]')
 })
+
+test('unicode', function (t) {
+  t.is(gen('a', 'æøå'), 'a.æøå')
+  t.is(gen('a', '𝑥'), 'a.𝑥')
+  t.is(gen('a', '1b'), 'a["1b"]')
+  t.is(gen('a', 'b c'), 'a["b c"]')
+})
