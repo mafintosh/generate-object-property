@@ -1,4 +1,4 @@
-const isProperty = require('is-property')
+const PROPERTY = /^[\p{ID_Start}$_][\p{ID_Continue}$\u200c\u200d]*$/u
 
 gen.valid = isProperty
 
@@ -14,4 +14,8 @@ module.exports = gen
 
 function gen (obj, prop) {
   return isProperty(prop) ? obj + '.' + prop : obj + '[' + JSON.stringify(prop) + ']'
+}
+
+function isProperty (prop) {
+  return typeof prop === 'string' &&PROPERTY.test(prop)
 }
